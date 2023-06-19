@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --primary: #2e6ff2;
+  --secondary: #782ef2;
+  --tertiary: #2ed4f2;
+}
+input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+.max-container {
+  width: 98%;
+  max-width: 1850px;
+  margin: auto;
+  padding: 0;
+}
+.btn-opcion {
+  width: 100% !important;
+  height: 60px !important;
+}
+.logoMenu {
+  height: 50px;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+.login .logo {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.login .fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login .form {
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .form .content {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.login .form .content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login .form .content button {
+  height: 50px;
+  margin-top: 20px;
+}
+.navbar {
+  background-color: var(--primary) !important;
+  padding: 15px 0px !important;
+}
+.nav-item:hover {
+  background-color: #2459c5 !important;
+  transition: 0.3s;
+}
+.nav-item {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item a {
+  color: #fff !important;
+}
+.closeSesion {
+  background-color: #fff !important;
+}
+.closeSesion:hover {
+  background-color: #fff !important;
+}
+.closeSesion a {
+  color: #000 !important;
+}
+.dropdown {
+  margin-top: 1px;
+}
+.dropdown-toggle {
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+.dropdown-toggle:hover {
+  background-color: #125663 !important;
+  transition: 0.3s;
+}
+.home {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+thead {
+    color: #fff;
+    text-align: center;
+    background-color: var(--primary) !important;
+}
+th, td {
+    text-align: center;
+}
+tr {
+    flex-direction: row !important;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 80px;
+}
+.bx-pencil, .bx-trash {
+    background-color: yellow;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bx-trash {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.excel {
+  height: 20px;
+  margin-left: 5px;
+}
+footer {
+    padding: 10px;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+footer div p {
+    margin: auto;
+    display: flex;
+}
+@media (max-width: 1000px) {
+  .nav-item {
+    margin-top: 20px;
+    display: block;
+    padding: 0px 10px;
+  }
+  .dropdown {
+    margin-left: 7px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 830px) {
+    .box-table {
+        overflow-x: scroll;
+    }
+}
